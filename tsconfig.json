@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es6", // or "es2015" or higher
+    "downlevelIteration": true,
+    // ... other compiler options
+    "baseUrl": "./src", // Your base directory
+    "paths": {
+      "@/*": ["*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "libs/mongodb.js"
+  ],
+  "exclude": ["node_modules"]
+}
