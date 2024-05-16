@@ -13,7 +13,7 @@ import { useState, useEffect } from "react";
 import jugaad from "./jugaadnew.png";
 import Image from "next/image";
 import "./globals.css";
-import { Route } from "next";
+import { Route } from "next"; 
 import { useRouter } from "next/navigation";
 // import Leaderboard from "@/components/leaderboard";
 
@@ -126,7 +126,7 @@ export default function Page() {
         throw new Error(`Error fetching teams: ${response1.statusText}`);
       }
       const data = await response1.json();
-      console.log("yo1");
+      console.log("yo11");
       console.log(data.data[formData.teamName]);
       console.log("yo2");
       console.log(data.data[formData.teamName].password);
